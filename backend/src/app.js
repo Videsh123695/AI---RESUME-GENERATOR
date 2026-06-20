@@ -59,11 +59,11 @@ app.use("/api/interview", interviewRouter);
 */
 
 app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
+  console.log("Backend route / called successfully");
 
-    message: "Backend running successfully",
-  });
+  res.send("Backend is running successfully");
+
+  
 });
 
 /*

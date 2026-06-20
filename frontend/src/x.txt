@@ -1,0 +1,13 @@
+4 layers of react architecture
+
+ui
+->component
+->pages
+
+
+hook
+=>hooks
+
+state
+
+Api
