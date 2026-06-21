@@ -14,15 +14,25 @@ connectToDB();
 // invokeGeminiAi();
 // generateInterviewReport({resume, selfDescription, jobDescription});
 
-console.log(process.env.NODE_ENV);
+// console.log(process.env.NODE_ENV);
 
 
 // app.get('/',(req,res)=>{
 //     res.send("hello friends how are you : ")
 // })
+if (process.env.NODE_ENV !== "production") {
+
+  const PORT = process.env.PORT || 2000;
+    
+  app.listen(PORT, () => {
+    console.log(
+      `Server running on http://localhost:${PORT}`
+    );
 
 
-app.listen(port,()=>{
-    console.log(`server is running on http://localhost:${port}`)
+  });
+}
 
-})
+module.exports = app;
+
+
