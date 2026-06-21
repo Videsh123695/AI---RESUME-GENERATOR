@@ -17,9 +17,9 @@ connectToDB();
 console.log(process.env.NODE_ENV);
 
 
-app.get('/',(req,res)=>{
-    res.send("hello friends how are you : ")
-})
+// app.get('/',(req,res)=>{
+//     res.send("hello friends how are you : ")
+// })
 
 
 app.listen(port,()=>{
