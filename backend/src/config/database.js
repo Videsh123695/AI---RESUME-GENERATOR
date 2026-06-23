@@ -34,7 +34,8 @@ const connectToDB = async () => {
 
 
     // Stop application if database fails
-    process.exit(1);
+    // process.exit(1);
+    return null;
   }
 };
 
